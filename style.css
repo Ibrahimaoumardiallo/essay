@@ -1,0 +1,147 @@
+body,ul,li
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+ul
+{
+	padding:0;
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+	float: right;
+}
+
+
+li
+{	   
+	list-style: none;
+	padding: 5px 10px;
+}
+
+
+.menu-container > ul > li
+{
+	display: inline-block;
+}	
+
+
+.menu-container
+{
+	background:#eee ;
+	height: 30px;
+	position: relative;
+}
+
+
+.menu-container li :hover
+{
+	color: red;
+}
+
+
+.logo img
+{
+	height: 30px;
+	width: 40px;
+}
+
+
+.logo
+{
+	display: inline-block;
+}
+
+
+.menu-container a
+{  
+	color: black;
+	text-decoration: none;
+	position: relative;
+}
+
+
+a:hover
+{
+	color: red;
+}
+
+
+.sous-menu 
+{
+	display: none;
+	background: #eee;
+	position:absolute ;
+}
+
+
+.sous-menu li
+{
+	display:block;
+}
+
+
+li:hover .sous-menu
+{
+	display: block;
+}
+
+
+.tiret
+{
+	width: 20px;
+	height: 2px;
+	background: #010101;
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+
+li:hover > a >.tiret
+{
+	display: block;
+}
+
+
+.menu-icon
+{
+	position: absolute;
+	right:3px;
+	display: none;
+}
+
+@media(max-width: 700px)
+{
+	ul
+	{
+		
+	}
+	.menu-icon
+	{
+		display: block!important;
+	}
+	ul li
+	{
+		display: block!important;
+	}
+}
+
+form
+{
+	display: inline-block;
+	position: relative;
+	left: 5px;
+	bottom: 10px;
+	width: 60%;
+}
+
+form input 
+{
+	width: 80%;
+}
+
+
